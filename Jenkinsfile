@@ -34,7 +34,7 @@ pipeline {
             steps {
                 
                 sh """
-                docker run -d -p 3000:3000 mariokamel/sprints_jenkins:latest
+                docker run -d -p 8000:8000 mariokamel/sprints_jenkins:latest
                 """
             }
         }
