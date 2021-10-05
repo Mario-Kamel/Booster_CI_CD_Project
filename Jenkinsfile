@@ -21,7 +21,7 @@ pipeline {
 
                 // Get some code from a GitHub repository
                 sh """
-                docker build . -f dockerfile -t mariokamel/sprints_jenkins:latest
+                docker build . -f Dockerfile -t mariokamel/sprints_jenkins:latest
                 docker login -u ${USERNAME} -p ${PASSWORD}
                 docker push mariokamel/sprints_jenkins:latest
                 """
